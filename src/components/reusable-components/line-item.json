@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_reusable_components_line_items",
+  "info": {
+    "displayName": "Line Item",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "product_name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "subtotal": {
+      "type": "decimal"
+    }
+  }
+}
